@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,36 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
     <title>CRM</title>
-    <style>
-		
-		#logo{
-		}
-
-		body{
-			background-color: #ebeff5;
-		}
-
-
-		#total-orders{
-			background-color: #4cb4c7;
-		}
-
-
-		#orders-delivered{
-			background-color: #7abecc;
-		}
-
-		#orders-pending{
-			background-color: #7CD1C0;
-		}
-
-
-
-
-	</style>
   </head>
   <body>
 	{%  include 'accounts/navbar.html' %}
